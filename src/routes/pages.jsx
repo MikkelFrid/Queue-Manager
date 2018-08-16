@@ -47,7 +47,7 @@ const pagesRoutes = [
     path: "/pages",
     pathTo: "/pages/register-page",
     name: "Register Page"
-  }
+  },
 ];
 
 export default pagesRoutes;

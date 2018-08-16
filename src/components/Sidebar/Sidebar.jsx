@@ -145,7 +145,7 @@ class Sidebar extends React.Component {
               onClick={() => this.openCollapse("openAvatar")}
             >
               <ListItemText
-                primary={rtlActive ? "تانيا أندرو" : "Tania Andrew"}
+                primary={rtlActive ? "تانيا أندرو" : "Username"}
                 secondary={
                   <b
                     className={
@@ -165,43 +165,7 @@ class Sidebar extends React.Component {
               <List className={classes.list + " " + classes.collapseList}>
                 <ListItem className={classes.collapseItem}>
                   <NavLink
-                    to="#"
-                    className={
-                      classes.itemLink + " " + classes.userCollapseLinks
-                    }
-                  >
-                    <span className={collapseItemMini}>
-                      {rtlActive ? "مع" : "MP"}
-                    </span>
-                    <ListItemText
-                      primary={rtlActive ? "ملفي" : "My Profile"}
-                      disableTypography={true}
-                      className={collapseItemText}
-                    />
-                  </NavLink>
-                </ListItem>
-                <ListItem className={classes.collapseItem}>
-                  <NavLink
-                    to="#"
-                    className={
-                      classes.itemLink + " " + classes.userCollapseLinks
-                    }
-                  >
-                    <span className={collapseItemMini}>
-                      {rtlActive ? "هوع" : "EP"}
-                    </span>
-                    <ListItemText
-                      primary={
-                        rtlActive ? "تعديل الملف الشخصي" : "Edit Profile"
-                      }
-                      disableTypography={true}
-                      className={collapseItemText}
-                    />
-                  </NavLink>
-                </ListItem>
-                <ListItem className={classes.collapseItem}>
-                  <NavLink
-                    to="#"
+                    to="/user-page"
                     className={
                       classes.itemLink + " " + classes.userCollapseLinks
                     }
